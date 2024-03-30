@@ -8,5 +8,15 @@
 </head>
 <body>
     <div class="fill"></div>
+    <script>
+        function enterFullscreen() {
+            var elem = document.documentElement;
+            if (elem.requestFullscreen) {
+                elem.requestFullscreen();
+            } else if (elem.webkitRequestFullscreen) { /* Wsparcie dla starszych wersji przeglądarek Safari */
+                elem.webkitRequestFullscreen();
+            }
+        }
+    </script>
 </body>
 </html>
