@@ -3,37 +3,11 @@
     margin: 0;
     padding: 0;
 }
-.fill{
-    margin: 0;
-    padding: 0;
+.top{
     width: 100%;
-    height: 100vh;
-    animation: change 15s infinite;
-    z-index:-1;
+    height: 20px;
+    background-color: black;
 }
 button{
-    width:100%;
-    height:100vh;
-    color:red;
-    z-index:1;
-}
-@keyframes change {
-    0%{
-        background-color: #f72121;
-    }
-    15%{
-        background-color: #f822d5;
-    }
-    50%{
-        background-color: #803dfd;
-    }
-    60%{
-        background-color: #2aaaff;
-    }
-    80%{
-        background-color: #4eff48;
-    }
-    100%{
-        background-color: #f72121;
-    }
+    
 }
