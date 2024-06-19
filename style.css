@@ -12,6 +12,7 @@ body{
     background-color: black;
     text-align: center;
     opacity: 0.9;
+    position: fixed;
 }
 .title{
     font-size: 40px;
