@@ -7,48 +7,21 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="video-background">
+        <video autoplay muted loop id="background-video">
+            <source src="hd.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
     <div id="loader" class="loader">
         <div class="spinner"></div>
     </div>
     <div class="top">
         <div class="title">MeeTY</div>
     </div>
+    <div class="line"></div>
     <div class="profile"></div>
-    <button class="next">Next</button>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-    // Loader functionality
-    const loader = document.getElementById('loader');
-    setTimeout(() => {
-        loader.style.opacity = 0;
-        setTimeout(() => {
-            loader.style.display = 'none';
-        }, 500);
-    }, 2000);
-
-    // Displaying a welcome message in the profile section
-    const profileDiv = document.querySelector('.profile');
-    profileDiv.innerHTML = '<p>Welcome to MeeTY! Explore and meet new people around you.</p>';
-    profileDiv.style.opacity = 0;
-    setTimeout(() => {
-        profileDiv.style.opacity = 0.8;
-    }, 1000);
-
-    // Functionality for the 'Next' button
-    const nextButton = document.querySelector('.next');
-    nextButton.addEventListener('click', function() {
-        // For demonstration, we'll just log a message to the console
-        console.log('Next button clicked! Implement your functionality here.');
-        alert('Next button clicked! Implement your functionality here.');
-
-        // Simulate a section change with animation
-        profileDiv.style.opacity = 0;
-        setTimeout(() => {
-            profileDiv.innerHTML = '<p>New section loaded. Continue exploring!</p>';
-            profileDiv.style.opacity = 0.8;
-        }, 500);
-    });
-});
-    </script>
+    <button class="next">NEXT<svg width="0.5625rem" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 9L9 1M9 1H2.5M9 1V7.22222" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"></path></svg></button>
+    <script src="script.js"></script>
 </body>
 </html>
