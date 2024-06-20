@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div id="loader" class="loader">
+        <div class="spinner"></div>
+    </div>
     <div class="top">
         <div class="title">MeeTY</div>
     </div>
@@ -14,9 +17,22 @@
     <button class="next">Next</button>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-    // Example functionality: Displaying a welcome message in the profile section
+    // Loader functionality
+    const loader = document.getElementById('loader');
+    setTimeout(() => {
+        loader.style.opacity = 0;
+        setTimeout(() => {
+            loader.style.display = 'none';
+        }, 500);
+    }, 2000);
+
+    // Displaying a welcome message in the profile section
     const profileDiv = document.querySelector('.profile');
     profileDiv.innerHTML = '<p>Welcome to MeeTY! Explore and meet new people around you.</p>';
+    profileDiv.style.opacity = 0;
+    setTimeout(() => {
+        profileDiv.style.opacity = 0.8;
+    }, 1000);
 
     // Functionality for the 'Next' button
     const nextButton = document.querySelector('.next');
@@ -24,42 +40,13 @@
         // For demonstration, we'll just log a message to the console
         console.log('Next button clicked! Implement your functionality here.');
         alert('Next button clicked! Implement your functionality here.');
-    });
 
-    // Example of smooth scrolling (assuming there's more content)
-    nextButton.addEventListener('click', function() {
-        window.scrollTo({
-            top: document.body.scrollHeight,
-            behavior: 'smooth'
-        });
-    });
-
-    // Example of a toggle for dark/light mode
-    const toggleButton = document.createElement('button');
-    toggleButton.innerText = 'Toggle Dark/Light Mode';
-    toggleButton.style.position = 'fixed';
-    toggleButton.style.top = '20px';
-    toggleButton.style.right = '20px';
-    toggleButton.style.padding = '10px 20px';
-    toggleButton.style.fontSize = '16px';
-    toggleButton.style.backgroundColor = '#393e46';
-    toggleButton.style.color = 'white';
-    toggleButton.style.border = 'none';
-    toggleButton.style.borderRadius = '5px';
-    toggleButton.style.cursor = 'pointer';
-    toggleButton.style.transition = 'background-color 0.3s ease';
-    document.body.appendChild(toggleButton);
-
-    toggleButton.addEventListener('click', function() {
-        if (document.body.style.backgroundColor === 'white') {
-            document.body.style.backgroundColor = '#222831';
-            document.body.style.color = 'white';
-            toggleButton.innerText = 'Toggle Dark/Light Mode';
-        } else {
-            document.body.style.backgroundColor = 'white';
-            document.body.style.color = '#222831';
-            toggleButton.innerText = 'Toggle Dark/Light Mode';
-        }
+        // Simulate a section change with animation
+        profileDiv.style.opacity = 0;
+        setTimeout(() => {
+            profileDiv.innerHTML = '<p>New section loaded. Continue exploring!</p>';
+            profileDiv.style.opacity = 0.8;
+        }, 500);
     });
 });
     </script>
