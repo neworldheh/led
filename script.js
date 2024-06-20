@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }, 500);
     }, 2000);
     const profileDiv = document.querySelector('.profile');
-    profileDiv.innerHTML = '<p>Welcome to MeeTY! Explore and meet new people around you.</p>';
+    profileDiv.innerHTML = '<p>Welcome to <a class="clr">MeeTY!</a> Explore and meet new people around <a class="clr">you</a>.</p>';
     profileDiv.style.opacity = 0;
     setTimeout(() => {
         profileDiv.style.opacity = 0.8;
