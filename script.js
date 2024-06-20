@@ -15,8 +15,8 @@ document.addEventListener('DOMContentLoaded', function() {
     }, 1000);
     const nextButton = document.querySelector('.next');
     nextButton.addEventListener('click', function() {
-        console.log('Next button clicked! Implement your functionality here.');
-        alert('Next button clicked! Implement your functionality here.');
+        console.log('klikk');
+        alert('klikna');
         profileDiv.style.opacity = 0;
         setTimeout(() => {
             profileDiv.innerHTML = '<p>New section loaded. Continue exploring!</p>';
