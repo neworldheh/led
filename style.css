@@ -33,9 +33,6 @@ body {
     opacity: 0;
     animation: fadeIn 2s forwards;
 }
-.profileDiv{
-    border: 2px dashed black;
-    }
 .profile {
     width: 100%;
     height: calc(100vh - 55px);
@@ -49,6 +46,7 @@ body {
     color: white;
     font-size: 20px;
     transition: opacity 0.5s ease;
+    border: 2px dashed black;
 }
 
 button.next {
