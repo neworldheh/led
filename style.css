@@ -22,3 +22,9 @@ body{
 button{
     
 }
+.profile{
+    width: 100%;
+    height: calc(100vh - 55px);
+    opacity: 0.8;
+    background-color: black;
+}
