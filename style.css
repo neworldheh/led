@@ -13,6 +13,9 @@ body {
 p {
     border: 2px dashed white;
     paddng: 10px;
+    height: 20vh;
+    width: 60%;
+    margin-left: -25%;
 }
 .top {
     width: 100%;
@@ -49,7 +52,6 @@ p {
     color: white;
     font-size: 20px;
     transition: opacity 0.5s ease;
-    border: 2px dashed white;
 }
 
 button.next {
