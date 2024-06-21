@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
             loader.style.display = 'none';
         }, 500);
     }, 2000);
+    const body = document.querySelector('body');
     const profileDiv = document.querySelector('.profile');
     const cardUser = document.querySelector('.profile');
     profileDiv.innerHTML = '<p>Welcome to <a class="clr">MeeTY!</a> Explore and meet new people around <a class="clr">you</a>.</p>';
@@ -28,10 +29,9 @@ document.addEventListener('DOMContentLoaded', function() {
         //alert('klikna');
         profileDiv.style.opacity = 0;
         setTimeout(() => {
-            for(let i=0;i<=5;i++){
-            profileDiv.innerHTML +=   '<div class="cards"><div class="icon"></div><div class="name"></div></div>';
+            profileDiv.innerHTML =   '<div class="cards"><div class="icon"></div><div class="name"></div></div>';
+            body.innerHTML = '<div class="toggle"><div class="circle"></div></div>';
             profileDiv.style.opacity = 0.8;
-            }
         }, 500);}
     });
 });
