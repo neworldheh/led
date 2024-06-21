@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
             profileDiv.innerHTML = '<p>Welcome to <a class="clr">MeeTY!</a> Explore and meet new people around <a class="clr">you</a>.</p>';
             profileDiv.style.opacity = 0.8;
         }, 500);
-        }
+        }else{
         console.log('klikk');
         alert('klikna');
         profileDiv.style.opacity = 0;
@@ -29,5 +29,5 @@ document.addEventListener('DOMContentLoaded', function() {
             profileDiv.innerHTML = '<p>New section loaded. Continue exploring!</p>';
             profileDiv.style.opacity = 0.8;
         }, 500);
-    });
+    });}
 });
