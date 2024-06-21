@@ -28,8 +28,10 @@ document.addEventListener('DOMContentLoaded', function() {
         //alert('klikna');
         profileDiv.style.opacity = 0;
         setTimeout(() => {
+            for(let i=0;i<=5;i++){
             profileDiv.innerHTML =   '<div class="cards"></div>';
             profileDiv.style.opacity = 0.8;
+            }
         }, 500);}
     });
 });
