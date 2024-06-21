@@ -102,6 +102,8 @@ p {
     height: 70px;
     background-color: black;
     opacity: .8;
+    left: 40%;
+    bottom: 20%;
 }
 .circle{
     width: 45%;
