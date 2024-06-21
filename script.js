@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }, 500);
         }else{
         console.log('klikk');
-        alert('klikna');
+        //alert('klikna');
         profileDiv.style.opacity = 0;
         setTimeout(() => {
             profileDiv.innerHTML = '<p>New section loaded. Continue exploring!</p>';
