@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function() {
         profileDiv.style.opacity = 0;
         setTimeout(() => {
             for(let i=0;i<=5;i++){
-            profileDiv.innerHTML =   '<div class="cards"><div class="icon"></div><div class="name"></div></div>';
+            profileDiv.innerHTML +=   '<div class="cards"><div class="icon"></div><div class="name"></div></div>';
             profileDiv.style.opacity = 0.8;
             }
         }, 500);}
