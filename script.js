@@ -28,6 +28,6 @@ document.addEventListener('DOMContentLoaded', function() {
         setTimeout(() => {
             profileDiv.innerHTML = '<p>New section loaded. Continue exploring!</p>';
             profileDiv.style.opacity = 0.8;
-        }, 500);
-    });}
+        }, 500);}
+    });
 });
