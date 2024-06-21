@@ -8,7 +8,9 @@ document.addEventListener('DOMContentLoaded', function() {
         }, 500);
     }, 2000);
     const profileDiv = document.querySelector('.profile');
+    const cardUser = document.querySelector('.profile');
     profileDiv.innerHTML = '<p>Welcome to <a class="clr">MeeTY!</a> Explore and meet new people around <a class="clr">you</a>.</p>';
+    
     profileDiv.style.opacity = 0;
     setTimeout(() => {
         profileDiv.style.opacity = 0.8;
@@ -26,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function() {
         //alert('klikna');
         profileDiv.style.opacity = 0;
         setTimeout(() => {
-            profileDiv.innerHTML = '<p>New section loaded. Continue exploring!</p>';
+            profileDiv.innerHTML = '<div class="cards"></div>';
             profileDiv.style.opacity = 0.8;
         }, 500);}
     });
