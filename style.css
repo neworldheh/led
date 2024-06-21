@@ -101,6 +101,7 @@ p {
     height: 70px;
     background: rgb(237,237,237,.1);
     backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
 }
 
 button.next {
