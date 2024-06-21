@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function() {
         profileDiv.style.opacity = 0;
         setTimeout(() => {
             profileDiv.innerHTML =   '<div class="cards"><div class="icon"></div><div class="name"></div></div>';
-            body.innerHTML = '<div class="toggle"><div class="circle"></div></div>';
+            //body.innerHTML = '<div class="toggle"><div class="circle"></div></div>';
             profileDiv.style.opacity = 0.8;
         }, 500);}
     });
