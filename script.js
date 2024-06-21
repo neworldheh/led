@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function() {
         //alert('klikna');
         profileDiv.style.opacity = 0;
         setTimeout(() => {
-            profileDiv.innerHTML =   '<div class="cards"></div><div class="cards"></div><div class="cards"></div>';
+            profileDiv.innerHTML =   '<div class="cards"></div>';
             profileDiv.style.opacity = 0.8;
         }, 500);}
     });
