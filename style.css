@@ -96,7 +96,7 @@ p {
     transition: opacity 0.5s ease;
     position: fixed;
 }
-.card{
+.cards{
     width: 75%;
     height: 70px;
     background: rgb(237,237,237,.1);
