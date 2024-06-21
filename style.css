@@ -96,6 +96,19 @@ p {
     transition: opacity 0.5s ease;
     position: fixed;
 }
+.toggle{
+    position: fixed;
+    width: 30%;
+    height: 70px;
+    background-color: black;
+    opacity: .8;
+}
+.circle{
+    width: 45%;
+    height: 68px;
+    background-color: white;
+    margin-left: 0px;
+}
 .cards{
     width: 75%;
     height: 70px;
