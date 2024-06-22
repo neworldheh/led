@@ -42,9 +42,4 @@ document.addEventListener('DOMContentLoaded', function() {
     line.addEventListener('mouseout', function() {
         profileDiv.style.marginTop = '60px';
     });
-    });
-    const icon = document.querySelector('.icon');
-    icon.addEventListener('click', function(){
-        
-    )};
 });
