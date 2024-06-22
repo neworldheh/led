@@ -59,7 +59,7 @@ p {
     font-size: 40px;
     color: white;
     font-weight: bold;
-     border-radius: 16px;
+    border-radius: 8px;
     opacity: 0;
     animation: fadeIn 2s forwards;
     background: linear-gradient(45deg, #e66465, #9198e5);
