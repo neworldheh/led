@@ -34,4 +34,12 @@ document.addEventListener('DOMContentLoaded', function() {
             profileDiv.style.opacity = 0.8;
         }, 500);}
     });
+    const line = document.querySelector('.line');
+    line.addEventListener('mouseover', function() {
+        profileDiv.style.marginTop = '55px';
+        profileDiv.style.height = "calc(100vh - 55px)"
+    });
+    line.addEventListener('mouseout', function() {
+        profileDiv.style.marginTop = '60px';
+    });
 });

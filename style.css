@@ -55,7 +55,19 @@ p {
     justify-content: center;
     transition: opacity 0.5s ease;
 }
+.icon{
+    width: 45px;
+    height: 45px;
+    background-color: ;
+    border-radius: 50%;
+    z-index: 1;
+    position: fixed;
+    right: 0px;
+    border: 2px solid rgb(255, 255, 255);
+}
 .title {
+    position: fixed;
+    z-index: 0;
     font-size: 40px;
     color: white;
     font-weight: bold;
@@ -73,8 +85,25 @@ p {
     background: linear-gradient(270deg, #e66465, #9198e5, #91e5b4, #e66465); 
     background-size: 600% 100%;
     animation: gradientShift 10s linear infinite;
+    transition: 1s;
 }
-
+.line:hover{
+    height: 50px;
+    opacity: .7;
+    transition: 1s;
+}
+.line:hover .profil{
+    width: 50%;
+    height: 50px;
+    background-color: #222831;
+    opacity: 0.9;
+    visibility: visible;
+}
+.profil{
+    height: 5px;
+    visibility: hidden;
+    transition: 1s;
+}
 @keyframes gradientShift {
     0% {
         background-position: 0% 50%;
@@ -96,6 +125,7 @@ p {
     color: white;
     transition: opacity 0.5s ease;
     position: fixed;
+    transition: .5s;
 }
 .cards{
     width: 75%;
