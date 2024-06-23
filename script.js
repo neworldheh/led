@@ -44,6 +44,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     const p = document.querySelector('p');
     p.addEventListener('click', function() {
-        p.style. 
+        p.style.top = '300px';
     }
 });
