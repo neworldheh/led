@@ -42,8 +42,4 @@ document.addEventListener('DOMContentLoaded', function() {
     line.addEventListener('mouseout', function() {
         profileDiv.style.marginTop = '60px';
     });
-    const p = document.querySelector('p');
-    p.addEventListener('click', function() {
-        p.style.top = '300px';
-    }
 });
