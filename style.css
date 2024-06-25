@@ -31,7 +31,7 @@ body {
 }
 p {
     position: fixed;
-    top: 100px;
+    top: 110px;
     border: 2px dashed white;
     padding: 10px;
     height: 22vh;
