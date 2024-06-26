@@ -57,15 +57,16 @@ p {
     justify-content: center;
     transition: opacity 0.5s ease;
 }
-.icon{
+.icon {
     width: 45px;
     height: 45px;
-    background-color: ;
+    background-color: #444;
     border-radius: 50%;
-    z-index: 1;
+    border: 2px solid white;
     position: fixed;
-    right: 0px;
-    border: 2px solid rgb(255, 255, 255);
+    right: 15px;
+    cursor: pointer;
+    z-index: 2;
 }
 .title {
     position: fixed;
@@ -89,19 +90,19 @@ p {
     animation: gradientShift 10s linear infinite;
     transition: 1s;
 }
-.line:hover{
+.line:hover {
     height: 50px;
     opacity: .7;
     transition: 1s;
 }
-.line:hover .profil{
+.line:hover .profil {
     width: 50%;
     height: 50px;
     background-color: #222831;
     opacity: 0.9;
     visibility: visible;
 }
-.profil{
+.profil {
     height: 5px;
     visibility: hidden;
     transition: 1s;
@@ -129,16 +130,15 @@ p {
     position: fixed;
     transition: .5s;
 }
-.cards{
+.cards {
     width: 75%;
     height: 70px;
-    background: rgb(237,237,237,.1);
+    background: rgba(237, 237, 237, 0.1);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     position: fixed;
     top: 70px;
 }
-
 button.next {
     position: fixed;
     bottom: 50px;
@@ -153,7 +153,6 @@ button.next {
     opacity: 0.8;
     letter-spacing: 5px;
 }
-
 button.next:hover {
     transition: 0.5s;
     border: 4px dashed white;
@@ -162,7 +161,6 @@ button.next:hover {
     opacity: 0.7;
     cursor: pointer;
 }
-
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -171,7 +169,6 @@ button.next:hover {
         opacity: 1;
     }
 }
-
 .loader {
     position: fixed;
     top: 0;
@@ -186,7 +183,6 @@ button.next:hover {
     z-index: 9999;
     transition: opacity 0.5s ease;
 }
-
 .spinner {
     border: 16px solid #f3f3f3;
     border-top: 16px solid #a5a5a5;
@@ -196,8 +192,56 @@ button.next:hover {
     animation: spin 2s linear infinite;
     scale: 0.5;
 }
-
 @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
+}
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 9998;
+}
+.overlay-content {
+    background-color: #222831;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+.overlay-content h2 {
+    margin-bottom: 20px;
+}
+.overlay-content ul {
+    list-style: none;
+    padding: 0;
+}
+.overlay-content ul li {
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.overlay-content ul li:hover {
+    background-color: #333;
+}
+.overlay-close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    background-color: #e66465;
+    border: none;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.overlay-close:hover {
+    background-color: #c05050;
 }
